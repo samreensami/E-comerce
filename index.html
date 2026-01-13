@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere - Modern E-Commerce Store</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts - Poppins for modern feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ShopSphere</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    
+                </ul>
+                <div class="d-flex gap-2">
+                    <a href="#" class="icon-btn text-dark"><i class="fas fa-search"></i></a>
+                    <a href="#" class="icon-btn text-dark position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-white">
+        <div class="container position-relative">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto">
+                    <h1>Discover Premium Products</h1>
+                    <p><center>ShopSphere - Your One-Stop Destination for High-Quality Items</center></p>
+                    <a href="#products" class="btn btn-primary-custom btn-lg">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="mt-4 text-muted">Handpicked items just for you</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="product-img w-100" alt="Wireless Headphones">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3">Premium Watch</h5>
+                            <p class="price mb-4">$299.00</p>
+                            <button class="btn btn-outline-primary rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#productModal1">Quick View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="product-img w-100" alt="Smart Watch">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3">Elite Smart Watch</h5>
+                            <p class="price mb-4">$449.00</p>
+                            <button class="btn btn-outline-primary rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#productModal2">Quick View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="product-img w-100" alt="Laptop">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3">UltraBook Pro</h5>
+                            <p class="price mb-4">$1,299.00</p>
+                            <button class="btn btn-outline-primary rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#productModal3">Quick View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="product-img w-100" alt="Camera">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-3">HeadPhones</h5>
+                            <p class="price mb-4">$899.00</p>
+                            <button class="btn btn-outline-primary rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#productModal4">Quick View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- Modal 1 -->
+<div class="modal fade" id="productModal1" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content overflow-hidden">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Premium Watch">
+                </div>
+                <div class="col-md-6 p-4 p-lg-5">
+                    <h3 class="modal-title mb-3">Premium Watch</h3>
+                    <p class="price h4 text-danger mb-4">$299.00</p>
+                    <p class="text-muted">Premium analog watch with classic design, durable stainless steel body, and water resistance up to 50m.</p>
+                    <ul class="list-unstyled text-muted small">
+                        <li><i class="fas fa-check text-success me-2"></i> Classic Analog Display</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Stainless Steel Body</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Water Resistant 50m</li>
+                    </ul>
+                    <button class="btn btn-primary-custom w-100 mt-4">Add to Cart</button>
+                    <button type="button" class="btn btn-link text-muted w-100" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="productModal2" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content overflow-hidden">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="Elite Smart Watch">
+                </div>
+                <div class="col-md-6 p-4 p-lg-5">
+                    <h3 class="modal-title mb-3">Elite Smart Watch</h3>
+                    <p class="price h4 text-danger mb-4">$449.00</p>
+                    <p class="text-muted">Advanced smart watch with health tracking, notifications, and customizable watch faces for a modern lifestyle.</p>
+                    <ul class="list-unstyled text-muted small">
+                        <li><i class="fas fa-check text-success me-2"></i> Heart Rate Monitoring</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Step & Sleep Tracker</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Customizable Watch Faces</li>
+                    </ul>
+                    <button class="btn btn-primary-custom w-100 mt-4">Add to Cart</button>
+                    <button type="button" class="btn btn-link text-muted w-100" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="productModal3" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content overflow-hidden">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="UltraBook Pro">
+                </div>
+                <div class="col-md-6 p-4 p-lg-5">
+                    <h3 class="modal-title mb-3">UltraBook Pro</h3>
+                    <p class="price h4 text-danger mb-4">$1,299.00</p>
+                    <p class="text-muted">Sleek laptop with high performance processor, long battery life, and ultra-lightweight design for productivity on the go.</p>
+                    <ul class="list-unstyled text-muted small">
+                        <li><i class="fas fa-check text-success me-2"></i> Intel i7 Processor</li>
+                        <li><i class="fas fa-check text-success me-2"></i> 16GB RAM, 512GB SSD</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Ultra-lightweight Design</li>
+                    </ul>
+                    <button class="btn btn-primary-custom w-100 mt-4">Add to Cart</button>
+                    <button type="button" class="btn btn-link text-muted w-100" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="productModal4" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content overflow-hidden">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid" alt="HeadPhones">
+                </div>
+                <div class="col-md-6 p-4 p-lg-5">
+                    <h3 class="modal-title mb-3">HeadPhones</h3>
+                    <p class="price h4 text-danger mb-4">$899.00</p>
+                    <p class="text-muted">High-fidelity headphones with immersive sound, noise isolation, and premium comfort for long listening sessions.</p>
+                    <ul class="list-unstyled text-muted small">
+                        <li><i class="fas fa-check text-success me-2"></i> Noise Isolation</li>
+                        <li><i class="fas fa-check text-success me-2"></i> Premium Comfort</li>
+                        <li><i class="fas fa-check text-success me-2"></i> High-Fidelity Sound</li>
+                    </ul>
+                    <button class="btn btn-primary-custom w-100 mt-4">Add to Cart</button>
+                    <button type="button" class="btn btn-link text-muted w-100" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">ShopSphere</h5>
+                    <p class="text-muted small">Your trusted destination for premium products and exceptional shopping experience.</p>
+                    <p class="text-muted small mb-0">
+                        <i class="fas fa-map-marker-alt me-2"></i> 123 Commerce Street, New York, NY 10001<br>
+                        <i class="fas fa-envelope me-2"></i> hello@shopsphere.com
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="mb-3">Policies</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="mb-3">Follow Us</h6>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-muted small">
+                © 2026 ShopSphere. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Optional: Navbar scroll effect -->
+    <script src="script.js"></script>
+</body>
+</html>
