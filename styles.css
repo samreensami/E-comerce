@@ -181,6 +181,13 @@ footer {
     color: white;
 }
 
+/* Ensure muted/footer small text is visible on dark background */
+footer .text-muted,
+footer p.text-muted,
+footer .small {
+    color: white !important;
+}
+
 footer a {
     color: #bdc3c7;
     text-decoration: none;
