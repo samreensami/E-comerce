@@ -189,7 +189,7 @@ footer .small {
 }
 
 footer a {
-    color: #bdc3c7;
+    color: #e6e9eb; /* lighter for contrast */
     text-decoration: none;
     transition: color 0.3s ease;
 }
